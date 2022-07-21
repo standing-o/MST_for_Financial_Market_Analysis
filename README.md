@@ -1,2 +1,4 @@
-# MST_for_financial_market_analysis
-Building Minimal Spanning Tree (MST) using correlations between stocks
+# MST for financial market analysis
+- Building Minimal Spanning Tree (MST) using correlations between stocks
+- Feb. 1, 2022 ~ Present
+
