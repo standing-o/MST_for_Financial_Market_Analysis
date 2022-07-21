@@ -48,7 +48,7 @@
 - For the distances, we construct the minimal spanning tree (MST) connecting the n stocks using the Prim's algorithm. This network is a connected graph with 29 edges.
 - We mainly used the [`igraph`](https://igraph.org/r/doc/mst.html) package of `R` to implement MSTs.
 - The MST structures observed for the dataset of the first 10 days:
-<img src = 'https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/mst_dp1.png' width=60%>    
+<img src = 'https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/mst_dp1.png' width=40%>    
 ➔ The red node is central vertex defined as the node with the largest degree in this study.   
 
 - The **average size** of MSTs and the **radius** of MSTs follow:
@@ -57,7 +57,7 @@
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;A_s(N)=\frac{1}{n-1}\sum_{d_{ij}\in{N}}d_{ij}" width=25%>   
 ,where N is the network and n is the number of the nodes in tree N.   
 ➔ The radius is given by:   
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;R(MST)=\sum_{d_{ij}\in{\tau_r}}d_{ij}" width=25% align='left'>   
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;R(MST)=\sum_{d_{ij}\in{\tau_r}}d_{ij}" width=25%>   
 ,where &tau;<sub>ms</sub> and d<sub>ij</sub> are the trail path from the central node of MST and the distance weight between two consecutive nodes i and j on MST.   
 
 - Comparison of four moments between the correlation coefficients and distances of MSTs
