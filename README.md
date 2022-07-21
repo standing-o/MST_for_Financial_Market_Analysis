@@ -80,7 +80,7 @@
 <img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/average_size_of_all_subnetworks.png' width=40%><img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/mean_of_average_size_of_all_subnetworks.png' width=40%>   
 
 - **Degree** of **central vertex** for all sub-networks and **degree distribution** of all sub-networks of the first 10 days:   
-<img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/degree_of_central_vertex_for_subnetworks.png' width=40%><img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/dp1_degree_distribution_of_subnetworks.png' width=38%>   
+<img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/degree_of_central_vertex_for_subnetworks.png' width=40%><img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/dp1_degree_distribution_of_subnetworks.png' width=37%>   
 
 ## Info
 - Authors : GWANGIL KIM, SEOYOUNG OH, DOOBAE JUN
