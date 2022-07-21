@@ -63,11 +63,10 @@
 ,where &tau;<sub>ms</sub> and d<sub>ij</sub> are the trail path from the central node of MST and the distance weight between two consecutive nodes i and j on MST.   
 
 - Comparison of four moments between the correlation coefficients and distances of MSTs
-  - Four moments of the correlation coefficients:
-  <img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/corr_mean_var.png' width=40%><img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/corr_skew_kurt.png' width=40%>   
-
-  - Four moments of the distances of MSTs:
-  <img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/mst_dist_mean_var.png' width=40%><img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/mst_dist_mean_var.png' width=40%>   
+  - Four moments of the correlation coefficients:   
+<img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/corr_mean_var.png' width=40%><img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/corr_skew_kurt.png' width=40%>   
+  - Four moments of the distances of MSTs:   
+<img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/mst_dist_mean_var.png' width=40%><img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/mst_dist_mean_var.png' width=40%>   
 
 ## Sub-networks derived from MST
 
