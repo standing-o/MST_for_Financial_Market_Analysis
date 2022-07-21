@@ -23,11 +23,11 @@
 
 - Dow Jones Industrial Average observed every minute during January 2020 (21 days)
 - We calculate the returns per minute of the closing prices of the stocks. The return per minute of i stock at time t on date k follows:
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;r_i^t=\frac{P_i^k(t+1)-P_i^k(t)}{P_i^k(t)}" width=25%>
+  <img src="https://latex.codecogs.com/svg.latex?\Large&space;r_i^t=\frac{P_i^k(t+1)-P_i^k(t)}{P_i^k(t)}" width=25%>
 ,where t+1 is the time one minute after time t.
 
 - And the average prices per day is calculated with the returns per minute above:   
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;y_i^k=\frac{1}{N}\sum_{t=1}^{N}r_i^k(t)" width=18%>
+  <img src="https://latex.codecogs.com/svg.latex?\Large&space;y_i^k=\frac{1}{N}\sum_{t=1}^{N}r_i^k(t)" width=18%>
 ,where N is the total number of returns in one day.   
    
 ➔ As a result, we get a matrix of size 21 by 30. (21 is the number of days in January 2020 and 30 is the number of stocks)   
@@ -38,17 +38,17 @@
 - We analyze the correlation-based networks (Mantegna, 1999), which has been the basis of many works for the last two decades.
 
 - First, we obtain the correlation coefficients from the returns of all the stocks:
-<img src = "https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/corr_formula.png" width=60%>   
+  <img src = "https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/corr_formula.png" width=60%>   
 ,where <...><sub>m</sub> indicates a time average over the consecutive m days.   
 
 - And, we convert the correlation coefficients into distances:
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;d_{ij}=\sqrt{2(1-\rho_{ij})}" width=20%>   
+  <img src="https://latex.codecogs.com/svg.latex?\Large&space;d_{ij}=\sqrt{2(1-\rho_{ij})}" width=20%>   
 ➔ This allows us to get a distance matrix of 30 by 30 size, which is symmetric. That is, considering the entries above(below) the main diagonal of this matrix, a total of 435 (30*30/2 - 15) distances can be obtained.   
 
 - For the distances, we construct the minimal spanning tree (MST) connecting the n stocks using the Prim's algorithm. This network is a connected graph with 29 edges.
 - We mainly used the [`igraph`](https://igraph.org/r/doc/mst.html) package of `R` to implement MSTs.
 - The MST structures observed for the dataset of the first 10 days:
-<img src = 'https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/mst_dp1.png' width=40%>    
+  <img src = 'https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/mst_dp1.png' width=40%>    
 ➔ The red node is central vertex defined as the node with the largest degree in this study.   
 
 - The **average size** of MSTs and the **radius** of MSTs follow:
@@ -74,13 +74,13 @@
 ➔ n is the number of nodes in tree and the sub-network of rank 0 is the same as MST.   
   
 - All possible sub-networks of the first 10 days:
-<img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/all_subnetworks_for_dp1.png' width=80%>   
+  <img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/all_subnetworks_for_dp1.png' width=80%>   
 
 - The **average size** of all sub-networks and **mean of average size** of all sub-networks follow:
-<img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/average_size_of_all_subnetworks.png' width=40%><img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/mean_of_average_size_of_all_subnetworks.png' width=40%>   
+  <img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/average_size_of_all_subnetworks.png' width=40%><img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/mean_of_average_size_of_all_subnetworks.png' width=40%>   
 
 - **Degree** of **central vertex** for all sub-networks and **degree distribution** of all sub-networks of the first 10 days:   
-<img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/degree_of_central_vertex_for_subnetworks.png' width=40%><img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/dp1_degree_distribution_of_subnetworks.png' width=37.5%>   
+  <img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/degree_of_central_vertex_for_subnetworks.png' width=40%><img src='https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/dp1_degree_distribution_of_subnetworks.png' width=37.5%>   
 
 ## Info
 - Authors : GWANGIL KIM, SEOYOUNG OH, DOOBAE JUN
