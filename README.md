@@ -23,7 +23,7 @@
 
 - Dow Jones Industrial Average observed every minute during January 2020 (21 days)
 - We calculate the returns per minute of the closing prices of the stocks. The return per minute of i stock at time t on date k follows:
-  <img src="https://latex.codecogs.com/svg.latex?\Large&space;r_i^t=\frac{P_i^k(t+1)-P_i^k(t)}{P_i^k(t)}" width=25%>
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;r_i^t=\frac{P_i^k(t+1)-P_i^k(t)}{P_i^k(t)}" width=25%>
 ,where t+1 is the time one minute after time t.
 
 - And the average prices per day is calculated with the returns per minute above:   
