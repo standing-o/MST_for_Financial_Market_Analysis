@@ -27,10 +27,9 @@
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;r_i^t=\frac{P_i^k(t+1)-P_i^k(t)}{P_i^k(t)}" width=25%><br>
 ,where t+1 is the time one minute after time t.
 
-- And the average prices per day is calculated with the returns per minute above:
-<br>
+- And the average prices per day is calculated with the returns per minute above:   
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;y_i^k=\frac{1}{N}\sum_{t=1}^{N}r_i^k(t)" width=18% align='left'><br>
-,where N is the total number of returns in one day.   
+,where N is the total number of returns in one day.<br>
 ➔ As a result, we get a matrix of size 21 by 30. (21 is the number of days in January 2020 and 30 is the number of stocks)   
 
 - We set the window width as 10 days, shifting 1 day. That is, we perform the daily propagation (DP) 12 times for our dataset.
