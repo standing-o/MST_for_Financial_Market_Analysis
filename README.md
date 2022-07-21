@@ -41,7 +41,7 @@
   <img src = "https://github.com/standing-o/MST_for_financial_market_analysis/blob/master/figs/corr_formula.png" width=60%>   
 ,where <...><sub>m</sub> indicates a time average over the consecutive m days.   
 
-- And, we convert the correlation coefficients into distances:
+- And, we convert the correlation coefficients into distances:   
   <img src="https://latex.codecogs.com/svg.latex?\Large&space;d_{ij}=\sqrt{2(1-\rho_{ij})}" width=20%>   
 ➔ This allows us to get a distance matrix of 30 by 30 size, which is symmetric. That is, considering the entries above(below) the main diagonal of this matrix, a total of 435 (30*30/2 - 15) distances can be obtained.   
 
