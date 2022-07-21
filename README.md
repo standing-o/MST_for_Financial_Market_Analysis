@@ -54,7 +54,7 @@
 - The **average size** of MSTs and the **radius** of MSTs follow:
 <img src='D:\Desktop\Github\MST_for_financial_market_analysis\figs\average_size_of_mst.png' width=40%><img src='D:\Desktop\Github\MST_for_financial_market_analysis\figs\radius_of_mst.png' width=40%>   
    
-➔ The average size is a modified version of the normalized tree length (13) and defined as follows:   
+➔ The average size is a modified version of the normalized tree length (Mantegna, 1999) and defined as follows:   
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;A_s(N)=\frac{1}{n-1}\sum_{d_{ij}\in{N}}d_{ij}" width=25%>   
 ,where N is the network and n is the number of the nodes in tree N.   
    
