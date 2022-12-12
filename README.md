@@ -34,7 +34,7 @@
 
 - We set the window width as 10 days, shifting 1 day. That is, we perform the daily propagation (DP) 12 times for our dataset.
 
-## Minimal Spanning Tree (MST)
+## Minimum Spanning Tree (MST)
 - We analyze the correlation-based networks (Mantegna, 1999), which has been the basis of many works for the last two decades.
 
 - First, we obtain the correlation coefficients from the returns of all the stocks:
