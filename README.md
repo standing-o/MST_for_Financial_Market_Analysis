@@ -1,4 +1,4 @@
-# MST for financial market analysis
+# MST for Financial Market Analysis
 - Building Minimal Spanning Tree (MST) using correlations between stocks
 - Feb. 1, 2022 ~ Aug. 1, 2022
 
